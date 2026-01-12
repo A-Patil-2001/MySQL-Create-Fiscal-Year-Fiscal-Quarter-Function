@@ -13,7 +13,7 @@ Go to functions tab and right click → create function and write this code:
 ### Code
 
 ```
-````markdown CREATE FUNCTION ````markdown`get_fiscal_year`(
+````CREATE FUNCTION```` `get_fiscal_year`(
 		calendar_date DATE 
 ) RETURNS int
     DETERMINISTIC
