@@ -86,7 +86,7 @@ RETURN QTR;
 END
 ```
 ### Explanation
-- **Input:** A calendar date.
+- **Input:** calendar date.
 - **Logic:** Extracts the month number (M) and assigns it to the correct Fiscal Quarter.
   - Sept–Nov → Q1
   - Dec–Feb → Q2
