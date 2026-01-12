@@ -104,6 +104,7 @@ SELECT
 -- Optput
 -- date       | fiscal_year | fiscal_quarter
 -- 2020-09-01 | 2021        |	Q1
+```
 
 ```sql
 SELECT * FROM fact_sales_monthly
