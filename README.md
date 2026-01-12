@@ -88,8 +88,8 @@ END
 ### Explanation
 - **Input:** A calendar date.
 - **Logic:** Extracts the month number (M) and assigns it to the correct Fiscal Quarter.
- - Sept–Nov → Q1
- - Dec–Feb → Q2
- - Mar–May → Q3
- - Jun–Aug → Q4
+  - Sept–Nov → Q1
+  - Dec–Feb → Q2
+  - Mar–May → Q3
+  - Jun–Aug → Q4
 - **Output:** Returns Q1, Q2, Q3, or Q4.
