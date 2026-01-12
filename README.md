@@ -38,12 +38,9 @@ END
 
 ### Explanation
 - **Input:** calendar date.
-
 - **Logic:** Increase the given date forward by 4 months.
-
 - **Example:** 2020-09-01 (Sep 1, 2020) → shifted to 2021-01-01.
-- 
 - **Output:** Returns the year of the Increased date, which represents the Fiscal Year.
 - **Example:** If fiscal year starts in September, then:
-Sept 2020 → Fiscal Year 2021
-March 2021 → Fiscal Year 2021
+  - Sept 2020 → Fiscal Year 2021
+  - March 2021 → Fiscal Year 2021
