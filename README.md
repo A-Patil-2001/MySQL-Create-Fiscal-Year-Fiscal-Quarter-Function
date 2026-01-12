@@ -44,3 +44,44 @@ END
 - **Example:** If fiscal year starts in September, then:
   - Sept 2020 → Fiscal Year 2021
   - March 2021 → Fiscal Year 2021
+
+ ## User Define Function 2: Quarters()
+ ### Code
+```sql
+CREATE FUNCTION `get_fiscal_quarter`(
+		calendar_date DATE
+) RETURNS char(2) 
+    DETERMINISTIC
+BEGIN
+	DECLARE M TINYINT;
+    DECLARE QTR CHAR(2);
+    SET M = MONTH(calendar_date);
+		CASE
+			WHEN M IN (9,10,11) THEN SET QTR = "Q1";
+            WHEN M IN (12,1,2) THEN SET QTR = "Q2";
+            WHEN M IN (3,4,5) THEN SET QTR = "Q3";
+            WHEN M IN (6,7,8) THEN SET QTR = "Q4";
+		END CASE;
+RETURN QTR;
+END
+```
+
+### Result
+```sql
+CREATE DEFINER=`abhishek`@`localhost` FUNCTION `get_fiscal_quarter`(
+		calendar_date DATE
+) RETURNS char(2) CHARSET utf8mb4
+    DETERMINISTIC
+BEGIN
+	DECLARE M TINYINT;
+    DECLARE QTR CHAR(2);
+    SET M = MONTH(calendar_date);
+		CASE
+			WHEN M IN (9,10,11) THEN SET QTR = "Q1";
+            WHEN M IN (12,1,2) THEN SET QTR = "Q2";
+            WHEN M IN (3,4,5) THEN SET QTR = "Q3";
+            WHEN M IN (6,7,8) THEN SET QTR = "Q4";
+		END CASE;
+RETURN QTR;
+END
+```
