@@ -100,7 +100,8 @@ SELECT
 	"2020-09-01" as date,
     get_fiscal_year("2020-09-01") as fiscal_year,
     get_fiscal_quarter("2020-09-01")as fiscal_quarter;
+
+-- Optput
+-- date       | fiscal_year | fiscal_quarter
+-- 2020-09-01 | 2021        |	Q1
 ```
-#### Output:
-date       | fiscal_year | fiscal_quarter
-2020-09-01 | 2021        |	Q1
