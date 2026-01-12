@@ -36,7 +36,7 @@ RETURN fiscal_year;
 END
 ```
 
-### Explanation
+## Explanation
 - **Input:** calendar date.
 - **Logic:** Increase the given date forward by 4 months.
 - **Example:** 2020-09-01 (Sep 1, 2020) → shifted to 2021-01-01.
