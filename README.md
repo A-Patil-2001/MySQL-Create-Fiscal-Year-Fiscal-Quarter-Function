@@ -1,4 +1,4 @@
-# MySQL-Create-Fiscal-Year-Fiscal-Quarter-Function
+# MySQL Create Fiscal Year Fiscal Quarters User Define Functions
 In this project, **MySQL user-defined functions** are built to transform **calendar dates** into **Fiscal Years** and **Fiscal Quarters** for financial and business analytics.
 
 ## **Why Do We Use This?**
